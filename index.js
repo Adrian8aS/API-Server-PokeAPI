@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
     res.status(200).send("<h1> Bienvenido </h1>")
 })
 
+app.get('/health', (req, res) => {
+    res.status(200).send("<h1> OK! </h1>")
+})
+
 // Defininn Routes POST
 
 // Get info by characters or number
