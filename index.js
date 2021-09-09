@@ -13,6 +13,10 @@ let port = process.env.PORT || 8080
 app.use(express.json())
 app.use(morgan('dev'))
 
+app.get('/', (req, res) => {
+    res.status(200).send("<h1> Bienvenido </h1>")
+})
+
 // Defininn Routes POST
 
 // Get info by characters or number
